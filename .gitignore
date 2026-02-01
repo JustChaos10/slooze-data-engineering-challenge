@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+
+# Virtualenvs
+venv/
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated outputs
+output/listings.csv
+output/executed_*.ipynb
+output/eda/
+
+# OS/editor
+.DS_Store
+Thumbs.db
