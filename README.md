@@ -55,18 +55,19 @@ python scraper.py --max-pages 1
 jupyter notebook eda.ipynb
 ```
 
-Or run EDA as a script (saves charts to `output/eda/`):
+Recommended: run EDA as a script (saves charts to `output/eda/`):
 
 ```bash
 python eda.py
 ```
 
-Run all cells; the notebook loads `output/listings.csv`, shows summary stats, category/location/price plots, and an insights section.
+The notebook (`eda.ipynb`) is optional for interactive exploration; it loads `output/listings.csv`, shows summary stats, plots, and an insights section.
 
 ## Project layout
 
 - `scraper.py` – Playwright + BeautifulSoup; scrapes IndiaMART category pages.
-- `eda.ipynb` – Load CSV, stats, visualizations, insights.
+- `eda.py` – Reproducible EDA script (stats + charts saved to `output/eda/`).
+- `eda.ipynb` – Optional notebook version for exploration.
 - `output/listings.csv` – Scraped data (created by `scraper.py`).
 - `requirements.txt` – Python dependencies.
 
