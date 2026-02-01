@@ -20,18 +20,6 @@ If `python -m playwright install` is slow, you can install only Chromium:
 python -m playwright install chromium
 ```
 
-**If venv fails under OneDrive** (e.g. "Unable to copy venvlauncher.exe"): create the venv outside the synced folder, then run commands from the project folder:
-
-```bash
-# Example: venv in a local folder
-python -m venv %USERPROFILE%\venvs\slooze-project
-%USERPROFILE%\venvs\slooze-project\Scripts\activate
-cd C:\Users\siraj\OneDrive\Desktop\Project
-pip install -r requirements.txt
-python -m playwright install
-python scraper.py
-```
-
 ## Run
 
 **Important:** Run the scraper in a **normal PowerShell or Command Prompt** (not only inside the IDE). Playwright launches a browser; some environments block this and show "Access is denied"—use a regular terminal.
